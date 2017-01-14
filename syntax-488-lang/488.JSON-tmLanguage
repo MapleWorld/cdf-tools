@@ -15,12 +15,17 @@
 
         {   // control tokens
             "name": "keyword.control.488",
-            "match": "\\b(if|else|then|var|repeat|until|while|do|exit|not|when|write|newline|return|:|\\.\\.)\\b"
+            "match": "\\b(if|else|then|var|repeat|until|while|do|exit|not|when|write|newline|return with|return|:|\\.\\.)\\b"
+        },
+
+        {   // I/O tokens
+            "name" : "keyword.other.io.488",
+            "match": "\\b(read|write)\\b"
         },
 
         {   // typedef tokens
-            "name": "variable.other.generic-type.488",
-            "match": "\\b(integer|boolean|text)\\b"
+            "name": "storage.type.primitive.488",
+            "match": "\\b(Integer|Boolean)\\b"
         },
 
         {   // boolean tokens
@@ -46,7 +51,7 @@
             "patterns": [
             ]
         },
-        
+
         {   // numeric constants
             "name": "constant.numeric.488",
             "match": "\\b-?[0-9]*\\b"

@@ -18,15 +18,21 @@
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(if|else|then|var|repeat|until|while|do|exit|not|when|write|newline|return|:|\.\.)\b</string>
+			<string>\b(if|else|then|var|repeat|until|while|do|exit|not|when|write|newline|return with|return|:|\.\.)\b</string>
 			<key>name</key>
 			<string>keyword.control.488</string>
 		</dict>
 		<dict>
 			<key>match</key>
-			<string>\b(integer|boolean|text)\b</string>
+			<string>\b(read|write)\b</string>
 			<key>name</key>
-			<string>variable.other.generic-type.488</string>
+			<string>keyword.other.io.488</string>
+		</dict>
+		<dict>
+			<key>match</key>
+			<string>\b(Integer|Boolean)\b</string>
+			<key>name</key>
+			<string>storage.type.primitive.488</string>
 		</dict>
 		<dict>
 			<key>match</key>
